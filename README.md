@@ -53,4 +53,8 @@ Go to [Discord's developer portal](https://discord.com/developers/applications),
 $ npm run deploy
 ```
 
+## Preview
+
+![preview](https://user-images.githubusercontent.com/83536827/192470018-1f723dc2-d443-439f-b94e-05eaee82f1c0.gif)
+
 > This README is an extended version of [**discord/cloudflare-sample-app/README.md**](https://github.com/discord/cloudflare-sample-app/blob/main/README.md)
