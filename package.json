@@ -1,0 +1,50 @@
+{
+	"name": "discord-cloudflare-handler",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"dev": "wrangler dev src/index.ts",
+		"clean": "rimraf dist",
+		"prebuild": "npm run clean",
+		"build": "tsc",
+		"fullbuild": "tsc && npm run clean",
+		"publish": "wrangler publish",
+		"deploy": "npm run build && npm run publish",
+		"register": "ts-node scripts/register.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NikanDevs/discord-cloudflare-handler.git"
+	},
+	"keywords": [
+		"discord",
+		"discord-http-endpoint",
+		"cloudflare",
+		"discord-cloudflare",
+		"discord-bot",
+		"http-endpoint",
+		"http-interaction"
+	],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/NikanDevs/discord-cloudflare-handler/issues"
+	},
+	"homepage": "https://github.com/NikanDevs/discord-cloudflare-handler#readme",
+	"dependencies": {
+		"discord-api-types": "^0.37.11",
+		"tslib": "^2.4.0"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^3.16.0",
+		"@types/node": "^18.7.23",
+		"@types/node-fetch": "^2.6.2",
+		"node-fetch": "^2.6.7",
+		"prettier": "^2.7.1",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.9.1",
+		"wrangler": "^2.1.7"
+	}
+}
+

@@ -1,0 +1,22 @@
+name = "REPLACE_WITH_WORKER_NAME"
+main = "./src/index.ts"
+compatibility_date="2022-02-26"
+
+node_compat = true
+
+account_id = "REPLACE_WITH_YOUR_CLOUDFLARE_ID"
+workers_dev = true
+
+[[rules]]
+type = "ESModule"
+globs = [ "**/*.js" ]
+
+[env.dev]
+
+[env.production]
+
+# [secrets]
+# DISCORD_TOKEN
+# DISCORD_PUBLIC_KEY
+# DISCORD_APPLICATION_ID
+# DISCORD_TEST_GUILD_ID

@@ -1,0 +1,12 @@
+# Libraries
+node_modules/
+
+# Build
+dist/
+
+# Environment
+.env
+
+# Miscellaneous
+.DS_Store
+.idea
